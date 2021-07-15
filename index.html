@@ -1,0 +1,171 @@
+<!doctype html>
+<head>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<title>A Basic HTML5 Template</title>
+</head>
+<div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Recycling Plastic<br>Survey Form</h1>
+          <p id="description" class="description text-center">
+     Please let us know how much you recycle and what can be done to make things easier. Thank you!!!</p>
+        </header>
+
+        <form id="survey-form">
+            <figure id="img-div">
+                <img
+                  id="image"
+                 
+src="https://www.rts.com/wp-content/uploads/2019/11/Sea-Turtle-03-1024x710.jpg"
+           alt="Sea turtle swimming with a plastig bag"
+           />
+    </figure>
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+    <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="18"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>How much plastic bottles do you purchase per week for your home?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select Case Amount</option>
+              <option value="A Pack of 12">Packs of 12</option>
+              <option value="A Pack of 16">Packs of 16</option>
+              <option value="A Pack of 24-32">Packs of 24-32</option>
+              <option value="Packs of 32 or more">Packs of  32 or more</option>
+            </select>
+          </div>
+   
+  <div class="form-group">
+            <p>Do you think if you cut the plastic use in your house in half, would you notice?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="greatly-be-an-impact"
+                type="radio"
+                class="input-radio"
+                checked
+              />Greatly be an impact</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="little-impact"
+                type="radio"
+                class="input-radio"
+              />Little Impact</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="no-impact-at-all"
+                type="radio"
+                class="input-radio"
+              />No Impact At all</label
+            >
+            <label
+              ><input
+                name="user-recommend"
+                value="barely-even-notice"
+                type="radio"
+                class="input-radio"
+              />Barely even notice</label
+            >
+            <label
+              >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Would any of the following make recycling easier for you?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="easier-labels"
+                type="checkbox"
+                class="input-checkbox"
+              />Easier Labels</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="less-items-with-plastic-in-them"
+                type="checkbox"
+                class="input-checkbox"
+              />Less Items With Plastic In Them</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="more-recycling-centers"
+                type="checkbox"
+                class="input-checkbox"
+              />More Recycling Centers</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="nonplastic-alternatives"
+                type="checkbox"
+                class="input-checkbox"
+              />Nonplastic Alternatives</label
+            >
+           
+          </div>
+      
+          <div class="form-group">
+            <p>What are ways your favorite plastic products be recycled? (Optional)</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Insert your suggestions here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit now.
+            </button>
+          </div>
+        </form>
+      </div>
+
