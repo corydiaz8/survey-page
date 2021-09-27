@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey Form</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="survey-form.css" />
+</head>
+<body class="body">
+<div class="container-fluid">
+<div class="content">
+<div class="header text-center">
+Recycle Survey
+<br>
+Please let us know your coffee habbits and preference!!
+</div>
+<div class="form-group">
+  <label id="name-label" for="name">Name</label>
+  <input
+  type="text"
+  name="name"
+  id="name"
+  class="form-control"
+  placeholder="Enter your name"
+  required
+/>
+</div>
+<div class="form-group">
+  <p> Current Age Group?</p>
+  <select id="dropdown" name="role" class="form-control" required>
+    <option disabled selected value>Select Age Group</option>
+    <option value="15-20">15-20</option>
+    <option value="21-29">21-29</option>
+    <option value="30-40">30-40</option>
+    <option value="41-50">41-50</option>
+    <option value="51-60">51-60</option>
+    <option value="61-70">61-70</option>
+    <option value="71-80">71-80</option>
+    <option value="81-90">81-90</option>
+  </select>
+</div>
+<div class="form-group">
+  <p>Amount of coffee consumed</p>
+  <input type="radio" id="seasonal" name="amount-consumed" value="seasonal">
+  <label for="seasonal">Seasonal</label>
+  <input type="radio" id="monthly" name="amount-consumed" value="monthly">
+  <label for="monthly">Monthly</label>
+  <input type="radio" id="weekly" name="amount-consumed" value="weekly">
+  <label for="weekly">Weekly</label>
+  <input type="radio" id="daily" name="amount-consumed" value="daily">
+  <label for="daily">Daily</label>
+</div>
+<div class="form-group">
+  <p>What time do you consume coffee?</p>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Morning</label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">Noon</label>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">Afternoon</label>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Night</label>
+</div>
+<div class="form-group">
+  <p>What coffee is your prefferated choice?</p>
+  <select id="dropdown" name="role" class="form-control" required>
+    <option disabled selected value>Select prefferated coffee</option>
+    <option value="Mocha">Mocha</option>
+    <option value="Americano">Americano</option>
+    <option value="Cold Brew">Cold Brew</option>
+    <option value="Picolo Latte">Picolo Latte</option>
+    <option value="Espresso">Espresso</option>
+    <option value="Flat Brew">Flat Brew</option>
+    <option value="Filter">Filter</option>
+    <option value="Frappe">Frappe</option>
+  </select>
+</div>
+<div class="form-group">
+  <p>How/Where do you like to make your coffee?</p>
+  <input type="radio" id="coffee-shop" name="coffee-making-method" value="personal-coffee-maker">
+  <label for="coffee-shop">Coffee Shop</label>
+  <input type="radio" id="monthly" name="coffee-making-method" value="personal-coffee-maker">
+  <label for="espresso-machine">Espresso Machine</label>
+  <input type="radio" id="mocha-pot" name="coffee-making-method" value="personal-coffee-maker">
+  <label for="mocha-pot">Mocha Pot</label>
+  <input type="radio" id="french-press" name="coffee-making-method" value="french-press">
+  <label for="mocha-pot">French Press</label>
+  <input type="radio" id="other" name="coffee-making-method" value="other">
+  <label for="other">Other</label>
+</div>
+<div class="form-group">
+  <p>What specifically draws you to coffee?</p>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Energizing</label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">Focus aid</label>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">To Socialize</label>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Taste</label>
+  <input type="radio" id="other" name="coffee-making-method" value="other">
+  <label for="other">Other</label>
+</div>
+<div class="form-group">
+  <p>What are ways your favorite plastic products be recycled? (Optional)</p>
+  <textarea
+    id="comments"
+    class="input-textarea"
+    name="comment"
+    placeholder="Insert your suggestions here..."
+  ></textarea>
+</div>
+<div class="form-group">
+  <button type="submit" id="submit" class="submit-button">
+    Submit now.
+  </button>
+</div>
+</div>
+</div>
+</body>
+
+                  
+             
+      
+       
+        

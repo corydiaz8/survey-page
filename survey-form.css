@@ -1,0 +1,23 @@
+.body{
+    background-image: linear-gradient(55deg, rgb(201, 177, 121), rgb(245, 238, 223));
+    background-repeat: no-repeat;
+}
+
+.content{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.6rem;
+    text-align: left;
+}
+
+@media (max-width: 425px){
+    .content{
+        margin: 10px 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    form-group{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
